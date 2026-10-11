@@ -88,7 +88,7 @@ kubectl get pods -n istio-system -w
 istioctl dashboard kiali
 ```
 
-## . check demo with book info APP
+## 10. check demo with book info APP
 
 ```
 # Deploy the app
@@ -99,4 +99,10 @@ kubectl apply -f  bookinfo-yamls/bookinfo-gateway.yaml
 
 # Verify no configuration issues
 istioctl analyze
+```
+
+## 11. Apply Loadgenerator.
+
+```
+kubectl apply -f  bookinfo-yamls/fortio-loadgen.yaml
 ```

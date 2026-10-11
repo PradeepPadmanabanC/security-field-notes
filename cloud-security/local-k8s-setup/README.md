@@ -25,3 +25,14 @@ k3d cluster create interview-demo \
 
 ```
 
+
+### note: to delete cluster 
+
+```
+k3d cluster delete interview-demo
+```
+
+```
+# Check if cluster is deleted 
+k3d cluster list
+```
